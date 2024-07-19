@@ -1,6 +1,3 @@
-Aquí tienes el archivo `README.md` con la información proporcionada:
-
-```markdown
 # Comunicación Serial en PSoC5LP
 
 La comunicación serial es una técnica fundamental en la programación de microcontroladores, permitiendo la transferencia de datos entre dispositivos. En esta guía, exploraremos cómo configurar y utilizar la comunicación serial en el PSoC5LP, un microcontrolador potente y versátil. Aprenderás los pasos esenciales para establecer una comunicación eficiente y realizar transferencias de datos confiables.
@@ -297,6 +294,3 @@ Este proyecto puede integrarse fácilmente en proyectos de robótica donde se re
 
 Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
-```
-
-Puedes personalizarlo aún más según las necesidades específicas de tus alumnos o añadir más ejemplos y explicaciones según lo consideres necesario.
