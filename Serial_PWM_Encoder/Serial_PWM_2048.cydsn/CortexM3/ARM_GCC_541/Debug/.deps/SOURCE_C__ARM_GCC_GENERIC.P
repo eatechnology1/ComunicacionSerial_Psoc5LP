@@ -1,0 +1,94 @@
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/CortexM3/ARM_GCC_541/Debug/main.o : C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/Button.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/Button_aliases.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/Clock_1.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/CyDmac.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/CyLib.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/CySpc.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/EN_L.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/EN_L_aliases.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/EN_R.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/EN_R_aliases.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/I2C.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/I2C_PVT.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/LED.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/LED_aliases.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/LPWM.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/L_PWM.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/L_PWM_aliases.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/RPWM.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/R_PWM.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/R_PWM_aliases.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/SCL.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/SCL_aliases.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/SDA.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/SDA_aliases.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/Timer1.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/UART.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/UART_IntClock.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cmsis_compiler.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/core_cm3.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cyPm.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cydevice.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cypins.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cytypes.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/isr.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/project.h C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/main.c C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/ssd1306.h 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/Button.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/Button_aliases.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/Clock_1.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/CyDmac.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/EN_L.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/EN_L_aliases.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/EN_R.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/EN_R_aliases.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/I2C.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/I2C_PVT.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/LED.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/LED_aliases.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/LPWM.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/L_PWM.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/L_PWM_aliases.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/RPWM.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/R_PWM.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/R_PWM_aliases.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/SCL.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/SCL_aliases.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/SDA.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/SDA_aliases.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/Timer1.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/UART.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/UART_IntClock.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cmsis_compiler.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/core_cm3.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/isr.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/Generated_Source/PSoC5/project.h : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/main.c : 
+
+C:/Users/Alexander\ Calderon/OneDrive\ -\ Universidad\ de\ Pamplona/Documentos/UNIPAMPLONA/2024\ -\ 1/Embebidos\ I/III\ Corte/Serial_PWM_Encoder/Serial_PWM_2048.cydsn/ssd1306.h : 
+

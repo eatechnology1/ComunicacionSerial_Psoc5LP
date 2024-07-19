@@ -1,0 +1,908 @@
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	__aeabi_f2d
+  20              		.section	.text.main,"ax",%progbits
+  21              		.align	2
+  22              		.global	main
+  23              		.thumb
+  24              		.thumb_func
+  25              		.type	main, %function
+  26              	main:
+  27              	.LFB64:
+  28              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * U N I V E R S I D A D   D E   P A M P L O N A
+   4:main.c        ****  *
+   5:main.c        ****  * Copyright Edwin Alexander Calderón Leal, 2024
+   6:main.c        ****  * Todos los Derechos Reservados
+   7:main.c        ****  * NO PUBLICADO, SOFTWARE LICENCIADO.
+   8:main.c        ****  *
+   9:main.c        ****  * INFORMACIÓN CONFIDENCIAL Y PROPIETARIA
+  10:main.c        ****  * PROPIEDAD DE Edwin Alexander Calderón Leal.
+  11:main.c        ****  *
+  12:main.c        ****  * ========================================
+  13:main.c        ****  *
+  14:main.c        ****  * Nombre: 
+  15:main.c        ****  * Edwin Alexander Calderón Leal
+  16:main.c        ****  * Kevin Andres Rios Trigos
+  17:main.c        ****  * Estudiantes de Ingeniería Mecatrónica
+  18:main.c        ****  * Proyecto para la materia de Sistemas Embebidos 1 
+  19:main.c        ****  * del programa de Ingeniería Electrónica
+  20:main.c        ****  * 
+  21:main.c        ****  * Docente de Aula: Ingeniero Julio Cesar Ospino Arias
+  22:main.c        ****  * 
+  23:main.c        ****  * Realizado en julio del 2024, Semestre 2024-1
+  24:main.c        ****  * 
+  25:main.c        ****  * Departamento de Ingenierías y Arquitectura
+  26:main.c        ****  *
+  27:main.c        ****  * ========================================
+  28:main.c        **** */
+  29:main.c        **** 
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 2
+
+
+  30:main.c        **** #include "project.h"
+  31:main.c        **** #include "stdio.h"
+  32:main.c        **** 
+  33:main.c        **** 
+  34:main.c        **** // Definición de variable
+  35:main.c        ****     char buffer[600];
+  36:main.c        ****     int dutyCycle = 75;                // Valor de ejemplo para el ciclo de trabajo del PWM
+  37:main.c        ****     long double currentTime = 12345678; // Tiempo actual en segundos (valor de ejemplo)
+  38:main.c        ****     unsigned int rawAngle = 1023;      // Valor crudo del ángulo (valor de ejemplo)
+  39:main.c        ****     float anguloGrados = 45.67890;     // Ángulo en grados (valor de ejemplo)
+  40:main.c        ****     float deltaAngle = 0.123;          // Cambio en el ángulo (valor de ejemplo)
+  41:main.c        ****     float delta_tiempo = 0.01;         // Cambio en el tiempo (valor de ejemplo)
+  42:main.c        ****     float rpm = 1500.123456;           // Revoluciones por minuto (valor de ejemplo)
+  43:main.c        **** 
+  44:main.c        **** int main(void)
+  45:main.c        **** {
+  29              		.loc 1 45 0
+  30              		.cfi_startproc
+  31              		@ Volatile: function does not return.
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34 0000 00B5     		push	{lr}
+  35              		.cfi_def_cfa_offset 4
+  36              		.cfi_offset 14, -4
+  37 0002 8DB0     		sub	sp, sp, #52
+  38              		.cfi_def_cfa_offset 56
+  46:main.c        ****     CyGlobalIntEnable; /* Habilita las interrupciones globales. */
+  39              		.loc 1 46 0
+  40              		.syntax unified
+  41              	@ 46 "main.c" 1
+  42 0004 62B6     		CPSIE   i
+  43              	@ 0 "" 2
+  47:main.c        ****     UART_Start(); /* Iniciar UART */ // Iniciar la comunicación serial
+  44              		.loc 1 47 0
+  45              		.thumb
+  46              		.syntax unified
+  47 0006 FFF7FEFF 		bl	UART_Start
+  48              	.LVL0:
+  48:main.c        ****     UART_PutString("!Manejo de variables! \r\n");
+  49              		.loc 1 48 0
+  50 000a 1448     		ldr	r0, .L4
+  51 000c FFF7FEFF 		bl	UART_PutString
+  52              	.LVL1:
+  53              	.L2:
+  49:main.c        **** for(;;)
+  50:main.c        **** {
+  51:main.c        ****         /* Código principal */
+  52:main.c        ****     
+  53:main.c        ****     sprintf(buffer, "PWM, %d ,    Time, %.2Lf  ,     Crudo, %u   ,   Grados,   %.5f  , deltaAngle, 
+  54              		.loc 1 53 0 discriminator 1
+  55 0010 134C     		ldr	r4, .L4+4
+  56 0012 2668     		ldr	r6, [r4]
+  57 0014 134D     		ldr	r5, .L4+8
+  58 0016 6068     		ldr	r0, [r4, #4]	@ float
+  59 0018 FFF7FEFF 		bl	__aeabi_f2d
+  60              	.LVL2:
+  61 001c CDE90A01 		strd	r0, [sp, #40]
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 3
+
+
+  62 0020 A068     		ldr	r0, [r4, #8]	@ float
+  63 0022 FFF7FEFF 		bl	__aeabi_f2d
+  64              	.LVL3:
+  65 0026 CDE90801 		strd	r0, [sp, #32]
+  66 002a E068     		ldr	r0, [r4, #12]	@ float
+  67 002c FFF7FEFF 		bl	__aeabi_f2d
+  68              	.LVL4:
+  69 0030 CDE90601 		strd	r0, [sp, #24]
+  70 0034 2069     		ldr	r0, [r4, #16]	@ float
+  71 0036 FFF7FEFF 		bl	__aeabi_f2d
+  72              	.LVL5:
+  73 003a CDE90401 		strd	r0, [sp, #16]
+  74 003e 6369     		ldr	r3, [r4, #20]
+  75 0040 0293     		str	r3, [sp, #8]
+  76 0042 D4E90623 		ldrd	r2, [r4, #24]
+  77 0046 CDE90023 		strd	r2, [sp]
+  78 004a 3246     		mov	r2, r6
+  79 004c 0649     		ldr	r1, .L4+12
+  80 004e 2846     		mov	r0, r5
+  81 0050 FFF7FEFF 		bl	sprintf
+  82              	.LVL6:
+  54:main.c        ****                      dutyCycle, currentTime, rawAngle, anguloGrados, deltaAngle, delta_tiempo, rpm)
+  55:main.c        ****     UART_PutString(buffer);
+  83              		.loc 1 55 0 discriminator 1
+  84 0054 2846     		mov	r0, r5
+  85 0056 FFF7FEFF 		bl	UART_PutString
+  86              	.LVL7:
+  87 005a D9E7     		b	.L2
+  88              	.L5:
+  89              		.align	2
+  90              	.L4:
+  91 005c 00000000 		.word	.LC0
+  92 0060 00000000 		.word	.LANCHOR0
+  93 0064 00000000 		.word	buffer
+  94 0068 1C000000 		.word	.LC1
+  95              		.cfi_endproc
+  96              	.LFE64:
+  97              		.size	main, .-main
+  98              		.global	rpm
+  99              		.global	delta_tiempo
+ 100              		.global	deltaAngle
+ 101              		.global	anguloGrados
+ 102              		.global	rawAngle
+ 103              		.global	currentTime
+ 104              		.global	dutyCycle
+ 105              		.comm	buffer,600,4
+ 106              		.data
+ 107              		.align	3
+ 108              		.set	.LANCHOR0,. + 0
+ 109              		.type	dutyCycle, %object
+ 110              		.size	dutyCycle, 4
+ 111              	dutyCycle:
+ 112 0000 4B000000 		.word	75
+ 113              		.type	rpm, %object
+ 114              		.size	rpm, 4
+ 115              	rpm:
+ 116 0004 F383BB44 		.word	1153139699
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 4
+
+
+ 117              		.type	delta_tiempo, %object
+ 118              		.size	delta_tiempo, 4
+ 119              	delta_tiempo:
+ 120 0008 0AD7233C 		.word	1008981770
+ 121              		.type	deltaAngle, %object
+ 122              		.size	deltaAngle, 4
+ 123              	deltaAngle:
+ 124 000c 6DE7FB3D 		.word	1039918957
+ 125              		.type	anguloGrados, %object
+ 126              		.size	anguloGrados, 4
+ 127              	anguloGrados:
+ 128 0010 32B73642 		.word	1110882098
+ 129              		.type	rawAngle, %object
+ 130              		.size	rawAngle, 4
+ 131              	rawAngle:
+ 132 0014 FF030000 		.word	1023
+ 133              		.type	currentTime, %object
+ 134              		.size	currentTime, 8
+ 135              	currentTime:
+ 136 0018 000000C0 		.word	-1073741824
+ 137 001c 298C6741 		.word	1097305129
+ 138              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 139              		.align	2
+ 140              	.LC0:
+ 141 0000 214D616E 		.ascii	"!Manejo de variables! \015\012\000"
+ 141      656A6F20 
+ 141      64652076 
+ 141      61726961 
+ 141      626C6573 
+ 142 0019 000000   		.space	3
+ 143              	.LC1:
+ 144 001c 50574D2C 		.ascii	"PWM, %d ,    Time, %.2Lf  ,     Crudo, %u   ,   Gra"
+ 144      20256420 
+ 144      2C202020 
+ 144      2054696D 
+ 144      652C2025 
+ 145 004f 646F732C 		.ascii	"dos,   %.5f  , deltaAngle,  %.3f    ,  deltaTime,  "
+ 145      20202025 
+ 145      2E356620 
+ 145      202C2064 
+ 145      656C7461 
+ 146 0082 20252E32 		.ascii	" %.2f   ,   RPM  ,  %.6f,\012\000"
+ 146      66202020 
+ 146      2C202020 
+ 146      52504D20 
+ 146      202C2020 
+ 147              		.text
+ 148              	.Letext0:
+ 149              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 150              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 151              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
+ 152              		.file 5 "Generated_Source\\PSoC5/UART.h"
+ 153              		.file 6 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 154              		.section	.debug_info,"",%progbits
+ 155              	.Ldebug_info0:
+ 156 0000 D9010000 		.4byte	0x1d9
+ 157 0004 0400     		.2byte	0x4
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 5
+
+
+ 158 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 159 000a 04       		.byte	0x4
+ 160 000b 01       		.uleb128 0x1
+ 161 000c 31000000 		.4byte	.LASF27
+ 162 0010 0C       		.byte	0xc
+ 163 0011 64010000 		.4byte	.LASF28
+ 164 0015 70010000 		.4byte	.LASF29
+ 165 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 166 001d 00000000 		.4byte	0
+ 167 0021 00000000 		.4byte	.Ldebug_line0
+ 168 0025 02       		.uleb128 0x2
+ 169 0026 01       		.byte	0x1
+ 170 0027 06       		.byte	0x6
+ 171 0028 4B020000 		.4byte	.LASF0
+ 172 002c 02       		.uleb128 0x2
+ 173 002d 01       		.byte	0x1
+ 174 002e 08       		.byte	0x8
+ 175 002f 23000000 		.4byte	.LASF1
+ 176 0033 02       		.uleb128 0x2
+ 177 0034 02       		.byte	0x2
+ 178 0035 05       		.byte	0x5
+ 179 0036 0D020000 		.4byte	.LASF2
+ 180 003a 02       		.uleb128 0x2
+ 181 003b 02       		.byte	0x2
+ 182 003c 07       		.byte	0x7
+ 183 003d D1000000 		.4byte	.LASF3
+ 184 0041 03       		.uleb128 0x3
+ 185 0042 0A000000 		.4byte	.LASF9
+ 186 0046 02       		.byte	0x2
+ 187 0047 3F       		.byte	0x3f
+ 188 0048 4C000000 		.4byte	0x4c
+ 189 004c 02       		.uleb128 0x2
+ 190 004d 04       		.byte	0x4
+ 191 004e 05       		.byte	0x5
+ 192 004f 14000000 		.4byte	.LASF4
+ 193 0053 02       		.uleb128 0x2
+ 194 0054 04       		.byte	0x4
+ 195 0055 07       		.byte	0x7
+ 196 0056 BF000000 		.4byte	.LASF5
+ 197 005a 02       		.uleb128 0x2
+ 198 005b 08       		.byte	0x8
+ 199 005c 05       		.byte	0x5
+ 200 005d 56010000 		.4byte	.LASF6
+ 201 0061 02       		.uleb128 0x2
+ 202 0062 08       		.byte	0x8
+ 203 0063 07       		.byte	0x7
+ 204 0064 15010000 		.4byte	.LASF7
+ 205 0068 04       		.uleb128 0x4
+ 206 0069 04       		.byte	0x4
+ 207 006a 05       		.byte	0x5
+ 208 006b 696E7400 		.ascii	"int\000"
+ 209 006f 02       		.uleb128 0x2
+ 210 0070 04       		.byte	0x4
+ 211 0071 07       		.byte	0x7
+ 212 0072 08010000 		.4byte	.LASF8
+ 213 0076 03       		.uleb128 0x3
+ 214 0077 45010000 		.4byte	.LASF10
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 6
+
+
+ 215 007b 03       		.byte	0x3
+ 216 007c 2C       		.byte	0x2c
+ 217 007d 41000000 		.4byte	0x41
+ 218 0081 02       		.uleb128 0x2
+ 219 0082 04       		.byte	0x4
+ 220 0083 04       		.byte	0x4
+ 221 0084 1D000000 		.4byte	.LASF11
+ 222 0088 02       		.uleb128 0x2
+ 223 0089 08       		.byte	0x8
+ 224 008a 04       		.byte	0x4
+ 225 008b FC000000 		.4byte	.LASF12
+ 226 008f 02       		.uleb128 0x2
+ 227 0090 01       		.byte	0x1
+ 228 0091 08       		.byte	0x8
+ 229 0092 6B010000 		.4byte	.LASF13
+ 230 0096 02       		.uleb128 0x2
+ 231 0097 08       		.byte	0x8
+ 232 0098 04       		.byte	0x4
+ 233 0099 3F020000 		.4byte	.LASF14
+ 234 009d 02       		.uleb128 0x2
+ 235 009e 04       		.byte	0x4
+ 236 009f 07       		.byte	0x7
+ 237 00a0 4D010000 		.4byte	.LASF15
+ 238 00a4 05       		.uleb128 0x5
+ 239 00a5 03010000 		.4byte	.LASF30
+ 240 00a9 01       		.byte	0x1
+ 241 00aa 2C       		.byte	0x2c
+ 242 00ab 68000000 		.4byte	0x68
+ 243 00af 00000000 		.4byte	.LFB64
+ 244 00b3 6C000000 		.4byte	.LFE64-.LFB64
+ 245 00b7 01       		.uleb128 0x1
+ 246 00b8 9C       		.byte	0x9c
+ 247 00b9 11010000 		.4byte	0x111
+ 248 00bd 06       		.uleb128 0x6
+ 249 00be 0A000000 		.4byte	.LVL0
+ 250 00c2 BB010000 		.4byte	0x1bb
+ 251 00c6 07       		.uleb128 0x7
+ 252 00c7 10000000 		.4byte	.LVL1
+ 253 00cb C6010000 		.4byte	0x1c6
+ 254 00cf DD000000 		.4byte	0xdd
+ 255 00d3 08       		.uleb128 0x8
+ 256 00d4 01       		.uleb128 0x1
+ 257 00d5 50       		.byte	0x50
+ 258 00d6 05       		.uleb128 0x5
+ 259 00d7 03       		.byte	0x3
+ 260 00d8 00000000 		.4byte	.LC0
+ 261 00dc 00       		.byte	0
+ 262 00dd 07       		.uleb128 0x7
+ 263 00de 54000000 		.4byte	.LVL6
+ 264 00e2 D1010000 		.4byte	0x1d1
+ 265 00e6 00010000 		.4byte	0x100
+ 266 00ea 08       		.uleb128 0x8
+ 267 00eb 01       		.uleb128 0x1
+ 268 00ec 50       		.byte	0x50
+ 269 00ed 02       		.uleb128 0x2
+ 270 00ee 75       		.byte	0x75
+ 271 00ef 00       		.sleb128 0
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 7
+
+
+ 272 00f0 08       		.uleb128 0x8
+ 273 00f1 01       		.uleb128 0x1
+ 274 00f2 51       		.byte	0x51
+ 275 00f3 05       		.uleb128 0x5
+ 276 00f4 03       		.byte	0x3
+ 277 00f5 1C000000 		.4byte	.LC1
+ 278 00f9 08       		.uleb128 0x8
+ 279 00fa 01       		.uleb128 0x1
+ 280 00fb 52       		.byte	0x52
+ 281 00fc 02       		.uleb128 0x2
+ 282 00fd 76       		.byte	0x76
+ 283 00fe 00       		.sleb128 0
+ 284 00ff 00       		.byte	0
+ 285 0100 09       		.uleb128 0x9
+ 286 0101 5A000000 		.4byte	.LVL7
+ 287 0105 C6010000 		.4byte	0x1c6
+ 288 0109 08       		.uleb128 0x8
+ 289 010a 01       		.uleb128 0x1
+ 290 010b 50       		.byte	0x50
+ 291 010c 02       		.uleb128 0x2
+ 292 010d 75       		.byte	0x75
+ 293 010e 00       		.sleb128 0
+ 294 010f 00       		.byte	0
+ 295 0110 00       		.byte	0
+ 296 0111 0A       		.uleb128 0xa
+ 297 0112 EF000000 		.4byte	.LASF16
+ 298 0116 04       		.byte	0x4
+ 299 0117 1207     		.2byte	0x712
+ 300 0119 1D010000 		.4byte	0x11d
+ 301 011d 0B       		.uleb128 0xb
+ 302 011e 76000000 		.4byte	0x76
+ 303 0122 0C       		.uleb128 0xc
+ 304 0123 8F000000 		.4byte	0x8f
+ 305 0127 33010000 		.4byte	0x133
+ 306 012b 0D       		.uleb128 0xd
+ 307 012c 9D000000 		.4byte	0x9d
+ 308 0130 5702     		.2byte	0x257
+ 309 0132 00       		.byte	0
+ 310 0133 0E       		.uleb128 0xe
+ 311 0134 17020000 		.4byte	.LASF17
+ 312 0138 01       		.byte	0x1
+ 313 0139 23       		.byte	0x23
+ 314 013a 22010000 		.4byte	0x122
+ 315 013e 05       		.uleb128 0x5
+ 316 013f 03       		.byte	0x3
+ 317 0140 00000000 		.4byte	buffer
+ 318 0144 0E       		.uleb128 0xe
+ 319 0145 00000000 		.4byte	.LASF18
+ 320 0149 01       		.byte	0x1
+ 321 014a 24       		.byte	0x24
+ 322 014b 68000000 		.4byte	0x68
+ 323 014f 05       		.uleb128 0x5
+ 324 0150 03       		.byte	0x3
+ 325 0151 00000000 		.4byte	dutyCycle
+ 326 0155 0E       		.uleb128 0xe
+ 327 0156 2C010000 		.4byte	.LASF19
+ 328 015a 01       		.byte	0x1
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 8
+
+
+ 329 015b 25       		.byte	0x25
+ 330 015c 96000000 		.4byte	0x96
+ 331 0160 05       		.uleb128 0x5
+ 332 0161 03       		.byte	0x3
+ 333 0162 00000000 		.4byte	currentTime
+ 334 0166 0E       		.uleb128 0xe
+ 335 0167 36020000 		.4byte	.LASF20
+ 336 016b 01       		.byte	0x1
+ 337 016c 26       		.byte	0x26
+ 338 016d 6F000000 		.4byte	0x6f
+ 339 0171 05       		.uleb128 0x5
+ 340 0172 03       		.byte	0x3
+ 341 0173 00000000 		.4byte	rawAngle
+ 342 0177 0E       		.uleb128 0xe
+ 343 0178 38010000 		.4byte	.LASF21
+ 344 017c 01       		.byte	0x1
+ 345 017d 27       		.byte	0x27
+ 346 017e 81000000 		.4byte	0x81
+ 347 0182 05       		.uleb128 0x5
+ 348 0183 03       		.byte	0x3
+ 349 0184 00000000 		.4byte	anguloGrados
+ 350 0188 0E       		.uleb128 0xe
+ 351 0189 2B020000 		.4byte	.LASF22
+ 352 018d 01       		.byte	0x1
+ 353 018e 28       		.byte	0x28
+ 354 018f 81000000 		.4byte	0x81
+ 355 0193 05       		.uleb128 0x5
+ 356 0194 03       		.byte	0x3
+ 357 0195 00000000 		.4byte	deltaAngle
+ 358 0199 0E       		.uleb128 0xe
+ 359 019a 1E020000 		.4byte	.LASF23
+ 360 019e 01       		.byte	0x1
+ 361 019f 29       		.byte	0x29
+ 362 01a0 81000000 		.4byte	0x81
+ 363 01a4 05       		.uleb128 0x5
+ 364 01a5 03       		.byte	0x3
+ 365 01a6 00000000 		.4byte	delta_tiempo
+ 366 01aa 0F       		.uleb128 0xf
+ 367 01ab 72706D00 		.ascii	"rpm\000"
+ 368 01af 01       		.byte	0x1
+ 369 01b0 2A       		.byte	0x2a
+ 370 01b1 81000000 		.4byte	0x81
+ 371 01b5 05       		.uleb128 0x5
+ 372 01b6 03       		.byte	0x3
+ 373 01b7 00000000 		.4byte	rpm
+ 374 01bb 10       		.uleb128 0x10
+ 375 01bc E4000000 		.4byte	.LASF24
+ 376 01c0 E4000000 		.4byte	.LASF24
+ 377 01c4 05       		.byte	0x5
+ 378 01c5 54       		.byte	0x54
+ 379 01c6 10       		.uleb128 0x10
+ 380 01c7 57020000 		.4byte	.LASF25
+ 381 01cb 57020000 		.4byte	.LASF25
+ 382 01cf 05       		.byte	0x5
+ 383 01d0 8B       		.byte	0x8b
+ 384 01d1 10       		.uleb128 0x10
+ 385 01d2 66020000 		.4byte	.LASF26
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 9
+
+
+ 386 01d6 66020000 		.4byte	.LASF26
+ 387 01da 06       		.byte	0x6
+ 388 01db E7       		.byte	0xe7
+ 389 01dc 00       		.byte	0
+ 390              		.section	.debug_abbrev,"",%progbits
+ 391              	.Ldebug_abbrev0:
+ 392 0000 01       		.uleb128 0x1
+ 393 0001 11       		.uleb128 0x11
+ 394 0002 01       		.byte	0x1
+ 395 0003 25       		.uleb128 0x25
+ 396 0004 0E       		.uleb128 0xe
+ 397 0005 13       		.uleb128 0x13
+ 398 0006 0B       		.uleb128 0xb
+ 399 0007 03       		.uleb128 0x3
+ 400 0008 0E       		.uleb128 0xe
+ 401 0009 1B       		.uleb128 0x1b
+ 402 000a 0E       		.uleb128 0xe
+ 403 000b 55       		.uleb128 0x55
+ 404 000c 17       		.uleb128 0x17
+ 405 000d 11       		.uleb128 0x11
+ 406 000e 01       		.uleb128 0x1
+ 407 000f 10       		.uleb128 0x10
+ 408 0010 17       		.uleb128 0x17
+ 409 0011 00       		.byte	0
+ 410 0012 00       		.byte	0
+ 411 0013 02       		.uleb128 0x2
+ 412 0014 24       		.uleb128 0x24
+ 413 0015 00       		.byte	0
+ 414 0016 0B       		.uleb128 0xb
+ 415 0017 0B       		.uleb128 0xb
+ 416 0018 3E       		.uleb128 0x3e
+ 417 0019 0B       		.uleb128 0xb
+ 418 001a 03       		.uleb128 0x3
+ 419 001b 0E       		.uleb128 0xe
+ 420 001c 00       		.byte	0
+ 421 001d 00       		.byte	0
+ 422 001e 03       		.uleb128 0x3
+ 423 001f 16       		.uleb128 0x16
+ 424 0020 00       		.byte	0
+ 425 0021 03       		.uleb128 0x3
+ 426 0022 0E       		.uleb128 0xe
+ 427 0023 3A       		.uleb128 0x3a
+ 428 0024 0B       		.uleb128 0xb
+ 429 0025 3B       		.uleb128 0x3b
+ 430 0026 0B       		.uleb128 0xb
+ 431 0027 49       		.uleb128 0x49
+ 432 0028 13       		.uleb128 0x13
+ 433 0029 00       		.byte	0
+ 434 002a 00       		.byte	0
+ 435 002b 04       		.uleb128 0x4
+ 436 002c 24       		.uleb128 0x24
+ 437 002d 00       		.byte	0
+ 438 002e 0B       		.uleb128 0xb
+ 439 002f 0B       		.uleb128 0xb
+ 440 0030 3E       		.uleb128 0x3e
+ 441 0031 0B       		.uleb128 0xb
+ 442 0032 03       		.uleb128 0x3
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 10
+
+
+ 443 0033 08       		.uleb128 0x8
+ 444 0034 00       		.byte	0
+ 445 0035 00       		.byte	0
+ 446 0036 05       		.uleb128 0x5
+ 447 0037 2E       		.uleb128 0x2e
+ 448 0038 01       		.byte	0x1
+ 449 0039 3F       		.uleb128 0x3f
+ 450 003a 19       		.uleb128 0x19
+ 451 003b 03       		.uleb128 0x3
+ 452 003c 0E       		.uleb128 0xe
+ 453 003d 3A       		.uleb128 0x3a
+ 454 003e 0B       		.uleb128 0xb
+ 455 003f 3B       		.uleb128 0x3b
+ 456 0040 0B       		.uleb128 0xb
+ 457 0041 27       		.uleb128 0x27
+ 458 0042 19       		.uleb128 0x19
+ 459 0043 49       		.uleb128 0x49
+ 460 0044 13       		.uleb128 0x13
+ 461 0045 8701     		.uleb128 0x87
+ 462 0047 19       		.uleb128 0x19
+ 463 0048 11       		.uleb128 0x11
+ 464 0049 01       		.uleb128 0x1
+ 465 004a 12       		.uleb128 0x12
+ 466 004b 06       		.uleb128 0x6
+ 467 004c 40       		.uleb128 0x40
+ 468 004d 18       		.uleb128 0x18
+ 469 004e 9642     		.uleb128 0x2116
+ 470 0050 19       		.uleb128 0x19
+ 471 0051 01       		.uleb128 0x1
+ 472 0052 13       		.uleb128 0x13
+ 473 0053 00       		.byte	0
+ 474 0054 00       		.byte	0
+ 475 0055 06       		.uleb128 0x6
+ 476 0056 898201   		.uleb128 0x4109
+ 477 0059 00       		.byte	0
+ 478 005a 11       		.uleb128 0x11
+ 479 005b 01       		.uleb128 0x1
+ 480 005c 31       		.uleb128 0x31
+ 481 005d 13       		.uleb128 0x13
+ 482 005e 00       		.byte	0
+ 483 005f 00       		.byte	0
+ 484 0060 07       		.uleb128 0x7
+ 485 0061 898201   		.uleb128 0x4109
+ 486 0064 01       		.byte	0x1
+ 487 0065 11       		.uleb128 0x11
+ 488 0066 01       		.uleb128 0x1
+ 489 0067 31       		.uleb128 0x31
+ 490 0068 13       		.uleb128 0x13
+ 491 0069 01       		.uleb128 0x1
+ 492 006a 13       		.uleb128 0x13
+ 493 006b 00       		.byte	0
+ 494 006c 00       		.byte	0
+ 495 006d 08       		.uleb128 0x8
+ 496 006e 8A8201   		.uleb128 0x410a
+ 497 0071 00       		.byte	0
+ 498 0072 02       		.uleb128 0x2
+ 499 0073 18       		.uleb128 0x18
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 11
+
+
+ 500 0074 9142     		.uleb128 0x2111
+ 501 0076 18       		.uleb128 0x18
+ 502 0077 00       		.byte	0
+ 503 0078 00       		.byte	0
+ 504 0079 09       		.uleb128 0x9
+ 505 007a 898201   		.uleb128 0x4109
+ 506 007d 01       		.byte	0x1
+ 507 007e 11       		.uleb128 0x11
+ 508 007f 01       		.uleb128 0x1
+ 509 0080 31       		.uleb128 0x31
+ 510 0081 13       		.uleb128 0x13
+ 511 0082 00       		.byte	0
+ 512 0083 00       		.byte	0
+ 513 0084 0A       		.uleb128 0xa
+ 514 0085 34       		.uleb128 0x34
+ 515 0086 00       		.byte	0
+ 516 0087 03       		.uleb128 0x3
+ 517 0088 0E       		.uleb128 0xe
+ 518 0089 3A       		.uleb128 0x3a
+ 519 008a 0B       		.uleb128 0xb
+ 520 008b 3B       		.uleb128 0x3b
+ 521 008c 05       		.uleb128 0x5
+ 522 008d 49       		.uleb128 0x49
+ 523 008e 13       		.uleb128 0x13
+ 524 008f 3F       		.uleb128 0x3f
+ 525 0090 19       		.uleb128 0x19
+ 526 0091 3C       		.uleb128 0x3c
+ 527 0092 19       		.uleb128 0x19
+ 528 0093 00       		.byte	0
+ 529 0094 00       		.byte	0
+ 530 0095 0B       		.uleb128 0xb
+ 531 0096 35       		.uleb128 0x35
+ 532 0097 00       		.byte	0
+ 533 0098 49       		.uleb128 0x49
+ 534 0099 13       		.uleb128 0x13
+ 535 009a 00       		.byte	0
+ 536 009b 00       		.byte	0
+ 537 009c 0C       		.uleb128 0xc
+ 538 009d 01       		.uleb128 0x1
+ 539 009e 01       		.byte	0x1
+ 540 009f 49       		.uleb128 0x49
+ 541 00a0 13       		.uleb128 0x13
+ 542 00a1 01       		.uleb128 0x1
+ 543 00a2 13       		.uleb128 0x13
+ 544 00a3 00       		.byte	0
+ 545 00a4 00       		.byte	0
+ 546 00a5 0D       		.uleb128 0xd
+ 547 00a6 21       		.uleb128 0x21
+ 548 00a7 00       		.byte	0
+ 549 00a8 49       		.uleb128 0x49
+ 550 00a9 13       		.uleb128 0x13
+ 551 00aa 2F       		.uleb128 0x2f
+ 552 00ab 05       		.uleb128 0x5
+ 553 00ac 00       		.byte	0
+ 554 00ad 00       		.byte	0
+ 555 00ae 0E       		.uleb128 0xe
+ 556 00af 34       		.uleb128 0x34
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 12
+
+
+ 557 00b0 00       		.byte	0
+ 558 00b1 03       		.uleb128 0x3
+ 559 00b2 0E       		.uleb128 0xe
+ 560 00b3 3A       		.uleb128 0x3a
+ 561 00b4 0B       		.uleb128 0xb
+ 562 00b5 3B       		.uleb128 0x3b
+ 563 00b6 0B       		.uleb128 0xb
+ 564 00b7 49       		.uleb128 0x49
+ 565 00b8 13       		.uleb128 0x13
+ 566 00b9 3F       		.uleb128 0x3f
+ 567 00ba 19       		.uleb128 0x19
+ 568 00bb 02       		.uleb128 0x2
+ 569 00bc 18       		.uleb128 0x18
+ 570 00bd 00       		.byte	0
+ 571 00be 00       		.byte	0
+ 572 00bf 0F       		.uleb128 0xf
+ 573 00c0 34       		.uleb128 0x34
+ 574 00c1 00       		.byte	0
+ 575 00c2 03       		.uleb128 0x3
+ 576 00c3 08       		.uleb128 0x8
+ 577 00c4 3A       		.uleb128 0x3a
+ 578 00c5 0B       		.uleb128 0xb
+ 579 00c6 3B       		.uleb128 0x3b
+ 580 00c7 0B       		.uleb128 0xb
+ 581 00c8 49       		.uleb128 0x49
+ 582 00c9 13       		.uleb128 0x13
+ 583 00ca 3F       		.uleb128 0x3f
+ 584 00cb 19       		.uleb128 0x19
+ 585 00cc 02       		.uleb128 0x2
+ 586 00cd 18       		.uleb128 0x18
+ 587 00ce 00       		.byte	0
+ 588 00cf 00       		.byte	0
+ 589 00d0 10       		.uleb128 0x10
+ 590 00d1 2E       		.uleb128 0x2e
+ 591 00d2 00       		.byte	0
+ 592 00d3 3F       		.uleb128 0x3f
+ 593 00d4 19       		.uleb128 0x19
+ 594 00d5 3C       		.uleb128 0x3c
+ 595 00d6 19       		.uleb128 0x19
+ 596 00d7 6E       		.uleb128 0x6e
+ 597 00d8 0E       		.uleb128 0xe
+ 598 00d9 03       		.uleb128 0x3
+ 599 00da 0E       		.uleb128 0xe
+ 600 00db 3A       		.uleb128 0x3a
+ 601 00dc 0B       		.uleb128 0xb
+ 602 00dd 3B       		.uleb128 0x3b
+ 603 00de 0B       		.uleb128 0xb
+ 604 00df 00       		.byte	0
+ 605 00e0 00       		.byte	0
+ 606 00e1 00       		.byte	0
+ 607              		.section	.debug_aranges,"",%progbits
+ 608 0000 1C000000 		.4byte	0x1c
+ 609 0004 0200     		.2byte	0x2
+ 610 0006 00000000 		.4byte	.Ldebug_info0
+ 611 000a 04       		.byte	0x4
+ 612 000b 00       		.byte	0
+ 613 000c 0000     		.2byte	0
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 13
+
+
+ 614 000e 0000     		.2byte	0
+ 615 0010 00000000 		.4byte	.LFB64
+ 616 0014 6C000000 		.4byte	.LFE64-.LFB64
+ 617 0018 00000000 		.4byte	0
+ 618 001c 00000000 		.4byte	0
+ 619              		.section	.debug_ranges,"",%progbits
+ 620              	.Ldebug_ranges0:
+ 621 0000 00000000 		.4byte	.LFB64
+ 622 0004 6C000000 		.4byte	.LFE64
+ 623 0008 00000000 		.4byte	0
+ 624 000c 00000000 		.4byte	0
+ 625              		.section	.debug_line,"",%progbits
+ 626              	.Ldebug_line0:
+ 627 0000 E0010000 		.section	.debug_str,"MS",%progbits,1
+ 627      0200BC01 
+ 627      00000201 
+ 627      FB0E0D00 
+ 627      01010101 
+ 628              	.LASF18:
+ 629 0000 64757479 		.ascii	"dutyCycle\000"
+ 629      4379636C 
+ 629      6500
+ 630              	.LASF9:
+ 631 000a 5F5F696E 		.ascii	"__int32_t\000"
+ 631      7433325F 
+ 631      7400
+ 632              	.LASF4:
+ 633 0014 6C6F6E67 		.ascii	"long int\000"
+ 633      20696E74 
+ 633      00
+ 634              	.LASF11:
+ 635 001d 666C6F61 		.ascii	"float\000"
+ 635      7400
+ 636              	.LASF1:
+ 637 0023 756E7369 		.ascii	"unsigned char\000"
+ 637      676E6564 
+ 637      20636861 
+ 637      7200
+ 638              	.LASF27:
+ 639 0031 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 639      43313120 
+ 639      352E342E 
+ 639      31203230 
+ 639      31363036 
+ 640 0064 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 640      20726576 
+ 640      6973696F 
+ 640      6E203233 
+ 640      37373135 
+ 641 0097 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 641      66756E63 
+ 641      74696F6E 
+ 641      2D736563 
+ 641      74696F6E 
+ 642              	.LASF5:
+ 643 00bf 6C6F6E67 		.ascii	"long unsigned int\000"
+ 643      20756E73 
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 14
+
+
+ 643      69676E65 
+ 643      6420696E 
+ 643      7400
+ 644              	.LASF3:
+ 645 00d1 73686F72 		.ascii	"short unsigned int\000"
+ 645      7420756E 
+ 645      7369676E 
+ 645      65642069 
+ 645      6E7400
+ 646              	.LASF24:
+ 647 00e4 55415254 		.ascii	"UART_Start\000"
+ 647      5F537461 
+ 647      727400
+ 648              	.LASF16:
+ 649 00ef 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 649      52784275 
+ 649      66666572 
+ 649      00
+ 650              	.LASF12:
+ 651 00fc 646F7562 		.ascii	"double\000"
+ 651      6C6500
+ 652              	.LASF30:
+ 653 0103 6D61696E 		.ascii	"main\000"
+ 653      00
+ 654              	.LASF8:
+ 655 0108 756E7369 		.ascii	"unsigned int\000"
+ 655      676E6564 
+ 655      20696E74 
+ 655      00
+ 656              	.LASF7:
+ 657 0115 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 657      206C6F6E 
+ 657      6720756E 
+ 657      7369676E 
+ 657      65642069 
+ 658              	.LASF19:
+ 659 012c 63757272 		.ascii	"currentTime\000"
+ 659      656E7454 
+ 659      696D6500 
+ 660              	.LASF21:
+ 661 0138 616E6775 		.ascii	"anguloGrados\000"
+ 661      6C6F4772 
+ 661      61646F73 
+ 661      00
+ 662              	.LASF10:
+ 663 0145 696E7433 		.ascii	"int32_t\000"
+ 663      325F7400 
+ 664              	.LASF15:
+ 665 014d 73697A65 		.ascii	"sizetype\000"
+ 665      74797065 
+ 665      00
+ 666              	.LASF6:
+ 667 0156 6C6F6E67 		.ascii	"long long int\000"
+ 667      206C6F6E 
+ 667      6720696E 
+ 667      7400
+ 668              	.LASF28:
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 15
+
+
+ 669 0164 6D61696E 		.ascii	"main.c\000"
+ 669      2E6300
+ 670              	.LASF13:
+ 671 016b 63686172 		.ascii	"char\000"
+ 671      00
+ 672              	.LASF29:
+ 673 0170 433A5C55 		.ascii	"C:\\Users\\Alexander Calderon\\OneDrive - Universid"
+ 673      73657273 
+ 673      5C416C65 
+ 673      78616E64 
+ 673      65722043 
+ 674 01a0 61642064 		.ascii	"ad de Pamplona\\Documentos\\UNIPAMPLONA\\2024 - 1\\"
+ 674      65205061 
+ 674      6D706C6F 
+ 674      6E615C44 
+ 674      6F63756D 
+ 675 01cf 456D6265 		.ascii	"Embebidos I\\III Corte\\Serial_Variables\\Serial_Va"
+ 675      6269646F 
+ 675      7320495C 
+ 675      49494920 
+ 675      436F7274 
+ 676 01ff 72696162 		.ascii	"riables.cydsn\000"
+ 676      6C65732E 
+ 676      63796473 
+ 676      6E00
+ 677              	.LASF2:
+ 678 020d 73686F72 		.ascii	"short int\000"
+ 678      7420696E 
+ 678      7400
+ 679              	.LASF17:
+ 680 0217 62756666 		.ascii	"buffer\000"
+ 680      657200
+ 681              	.LASF23:
+ 682 021e 64656C74 		.ascii	"delta_tiempo\000"
+ 682      615F7469 
+ 682      656D706F 
+ 682      00
+ 683              	.LASF22:
+ 684 022b 64656C74 		.ascii	"deltaAngle\000"
+ 684      61416E67 
+ 684      6C6500
+ 685              	.LASF20:
+ 686 0236 72617741 		.ascii	"rawAngle\000"
+ 686      6E676C65 
+ 686      00
+ 687              	.LASF14:
+ 688 023f 6C6F6E67 		.ascii	"long double\000"
+ 688      20646F75 
+ 688      626C6500 
+ 689              	.LASF0:
+ 690 024b 7369676E 		.ascii	"signed char\000"
+ 690      65642063 
+ 690      68617200 
+ 691              	.LASF25:
+ 692 0257 55415254 		.ascii	"UART_PutString\000"
+ 692      5F507574 
+ 692      53747269 
+ARM GAS  C:\Users\ALEXAN~1\AppData\Local\Temp\cc4jifmm.s 			page 16
+
+
+ 692      6E6700
+ 693              	.LASF26:
+ 694 0266 73707269 		.ascii	"sprintf\000"
+ 694      6E746600 
+ 695              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

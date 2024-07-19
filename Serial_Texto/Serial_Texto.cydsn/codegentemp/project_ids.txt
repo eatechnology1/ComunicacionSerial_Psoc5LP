@@ -1,0 +1,6 @@
+C:\Users\Alexander Calderon\OneDrive - Universidad de Pamplona\Documentos\UNIPAMPLONA\2024 - 1\Embebidos I\III Corte\Serial_Texto\Serial_Texto.cydsn\Serial_Texto.cyprj|e2f0f07d-4eea-44c5-9d65-1a7fff87ba28
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|72bee8b5-92fb-4fc1-b1f5-7ebb32614c1c
+C:\Users\Alexander Calderon\OneDrive - Universidad de Pamplona\Documentos\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|2018c78c-b796-4060-b640-7828094e2070
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d86d66ec-3f8d-4f59-a4b4-fa6d71ef0066
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ef74f59b-06e5-4240-9a0c-8740a48d7d56
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2b3ec2db-5dd1-4ffc-8103-4f9a2293e0b9
